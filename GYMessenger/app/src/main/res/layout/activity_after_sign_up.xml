@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    tools:context="khaled.torjman.com.gymessenger.AfterSignUpActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorBackgroundLighter">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#f6f6f6"
+            android:src="@drawable/unknown"
+            android:id="@+id/pic"
+            android:onClick="changePhoto"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/ic_autorenew_black_24dp"/>
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+
+            <AutoCompleteTextView
+
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Username"
+                android:textSize="18sp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@drawable/ic_person_black_24dp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="@null"
+                />
+        <AutoCompleteTextView
+
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_white"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="@null"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trainee"
+                android:textSize="20sp"
+                android:textColor="#f6f6f6"
+                android:paddingRight="10dp"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <me.omidh.liquidradiobutton.LiquidRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:lrb_strokeWidth="1dp"
+                    app:lrb_explodeCount="3"
+                    app:lrb_outterPadding="8dp"
+                    app:lrb_innerCircleRadius="10dp"
+                    app:lrb_strokeRadius="15dp"
+                    app:lrb_inAnimDuration="500"
+                    app:lrb_outAnimDuration="500"
+                    app:lrb_checkedColor="@android:color/holo_red_light"
+                    app:lrb_unCheckedColor="@android:color/holo_red_light"
+                    android:paddingRight="40dp"
+                    />
+                <me.omidh.liquidradiobutton.LiquidRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    app:lrb_strokeWidth="1dp"
+                    app:lrb_explodeCount="3"
+                    app:lrb_outterPadding="8dp"
+                    app:lrb_innerCircleRadius="10dp"
+                    app:lrb_strokeRadius="15dp"
+                    app:lrb_inAnimDuration="500"
+                    app:lrb_outAnimDuration="500"
+                    app:lrb_checkedColor="@android:color/holo_red_light"
+                    app:lrb_unCheckedColor="@android:color/holo_red_light"
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trainer"
+                android:textSize="20sp"
+                android:textColor="#f6f6f6"
+                android:paddingLeft="10dp"/>
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Next"
+            android:textSize="17sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            android:onClick="goToMain"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

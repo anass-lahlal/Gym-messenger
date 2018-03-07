@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+              android:orientation="vertical"
+             tools:context="khaled.torjman.com.gymessenger.Settings">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/colorBackgroundLighter">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#f6f6f6"
+            android:src="@drawable/unknown"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp">
+        <AutoCompleteTextView
+
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Name"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_white"
+            android:drawablePadding="5dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="@null"
+            />
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="Save"
+            android:textSize="17sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            android:id="@+id/save"
+            />
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="Sign out"
+            android:textSize="17sp"
+            android:paddingRight="40dp"
+            android:paddingLeft="40dp"
+            android:textStyle="normal"
+            android:textColor="#fff"
+            android:background="@drawable/button_background"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
